@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MyMVVMProject</string>
+    <string name="error_fetch_movies">Error</string>
+</resources>
