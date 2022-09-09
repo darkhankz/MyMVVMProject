@@ -53,7 +53,5 @@ class CustomAdapter(private var movies: MutableList<Movie>) : RecyclerView.Adapt
     inner class ViewHolder(ItemView: View) : RecyclerView.ViewHolder(ItemView) {
 //        val textView: TextView = itemView.findViewById(R.id.textView)
         val imageView: ImageView = itemView.findViewById(R.id.image_view)
-
-
     }
 }

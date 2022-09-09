@@ -12,7 +12,9 @@ import com.example.mymvvmproject.model.repository.MoviesRepository
 import com.example.mymvvmproject.view.adapters.CustomAdapter
 
 class MainActivity : AppCompatActivity() {
-    private val mMoviesRepository: MoviesRepository = MoviesRepository
+//    private val mMoviesRepository: MoviesRepository = MoviesRepository
+    private val mViewModel : MoviesViewModel = MoviesViewModel()
+
 
     private lateinit var popularMovies: RecyclerView
     private lateinit var popularMoviesAdapter: CustomAdapter
@@ -37,7 +39,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun getPopularMovies() {
-        MoviesRepository.getPopularMovies(
+        mViewModel.getPopularMovies(
             popularMoviesPage,
             ::onPopularMoviesFetched,
             ::onError
